@@ -1,0 +1,39 @@
+html {
+  background-color: #F7F7F7;
+}
+div.grid {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+div.row {
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+img.product-image {
+  opacity: .7;
+}
+img.product-image:hover {
+  opacity: 1;
+}
+@media (min-width: 550px) {
+  .one-third.column {
+    width: 45%;
+    display: inline-block;
+    float: left;
+    margin-left: 0;
+    vertical-align: middle;
+  }
+  img {
+    width: 95%;
+  }
+}
+@media (min-width: 750px) {
+  .one-third.column {
+    width: 30.6666666667%;
+  }
+  img {
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,56 @@
+// Variables
+
+  // Skeleton Breakpoints
+  @bp-larger-than-phablet   : 550px;
+  @bp-larger-than-tablet    : 750px;
+  @bp-larger-than-desktop   : 1000px;
+
+html {
+  background-color: #F7F7F7;
+}
+
+div {
+  &.grid {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &.row {
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+img{
+  &.product-image {
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: @bp-larger-than-phablet) {
+  .one-third.column { 
+    width: 45%;
+    display: inline-block;
+    float: left;
+    margin-left: 0;
+    vertical-align: middle;
+  }
+  img {
+    width: 95%;
+  }
+}
+
+@media (min-width: @bp-larger-than-tablet){ 
+  .one-third.column { 
+    width: 30.6666666667%;
+  }
+  img {
+    max-width: 250px;
+  }
+}
