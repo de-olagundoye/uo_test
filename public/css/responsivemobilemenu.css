@@ -1,0 +1,130 @@
+/*
+Responsive Mobile Menu v1.0
+Plugin URI: responsivemobilemenu.com
+Author: Sergio Vitov
+Author URI: http://xmacros.com
+License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
+*/
+
+.rmm {
+  display: inline-block;
+  float: right;
+  width:100%;
+  margin: -31px 10px ;
+  text-align: center;
+  line-height:20px;
+}
+.rmm a {
+  color:#ebebeb;
+  text-decoration:none;
+}
+.rmm .rmm-main-list, .rmm .rmm-main-list li {
+  margin:0px;
+  padding:0px;
+}
+.rmm ul {
+  display:block;
+  width:auto !important;
+  margin:0 auto !important;
+  overflow:hidden;
+  list-style:none;
+}
+
+
+/* sublevel menu - in construction */
+.rmm ul li ul, .rmm ul li ul li, .rmm ul li ul li a {
+  display:none !important;
+  height:0px !important;
+  width:0px !important;
+}
+/* */
+
+
+.rmm .rmm-main-list li {
+  display:inline;
+  padding: 0px;
+  margin:0px !important;
+}
+.rmm-toggled {
+  position:static;
+  width:100%;
+  float: right;
+  overflow:hidden;
+  margin:0 auto !important;
+  padding-bottom: 50px;
+}
+.rmm-button:hover {
+  cursor:pointer;
+}
+.rmm .rmm-toggled ul {
+  display:none;
+  margin:10px !important;
+  padding:0px 40px;
+}
+.rmm .rmm-toggled ul li {
+  display:block;
+  margin:0 auto !important;
+}
+
+
+/* MINIMAL STYLE */
+
+.rmm.minimal a {
+  color: #888;
+}
+.rmm.minimal a:hover {
+/*  opacity:.2;*/
+  color: #222222;
+}
+.rmm.minimal .rmm-main-list li a {
+  display:inline-block;
+  padding:8px 15px 8px 15px;
+  margin:-8px 3px 0px 3px;
+}
+.rmm.minimal .rmm-toggled {
+  width:100%;
+  min-height:36px;
+}
+.rmm.minimal .rmm-toggled-controls {
+  display:block;
+  height:36px;
+  color:#333333;
+  text-align:left;
+  padding: 0px 70px;
+  position:relative;
+}
+.rmm.minimal .rmm-toggled-title {
+  position:relative;
+  top:9px;
+  left:9px;
+  font-size:16px;
+  color:#33333;
+}
+
+.rmm.minimal .rmm-button {
+  display:block;
+  position:absolute;
+  right:9px;
+  padding: 2px;
+}
+
+.rmm.minimal .rmm-button span {
+  display:block;
+  margin:5px 0px 4px 0px;
+  height:2px;
+  background: #222;
+  width:25px;
+}
+.rmm.minimal .rmm-toggled ul li a:hover {
+  /*  opacity:.2;*/
+  color: #222222; 
+}
+.rmm.minimal .rmm-toggled ul li a {
+  display:block;
+  text-align: right;
+  padding-bottom: 20px;
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #222222;
+}
